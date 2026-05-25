@@ -1,0 +1,61 @@
+extends ../layouts/main
+
+block content
+
+    .hero
+
+        .busca-box.w3-card
+
+            h1.titulo Buscar Passagens
+
+            .linha-campos
+
+                .campo
+
+                    label Estado de origem
+
+                    select#estadoOrigem.w3-select
+
+                        option(value='') Selecione o estado
+
+                    br
+
+                    label Cidade de origem
+
+                    select#origem.w3-select
+
+                        option(value='') Selecione a cidade
+
+                .trocar-box
+
+                    button#trocarBtn.trocar-btn(type='button') ⇄
+
+                .campo
+
+                    label Estado de destino
+
+                    select#estadoDestino.w3-select
+
+                        option(value='') Selecione o estado
+
+                    br
+
+                    label Cidade de destino
+
+                    select#destino.w3-select
+
+                        option(value='') Selecione a cidade
+
+            .linha-inferior
+
+                .campo-data
+
+                    label Dia da viagem
+
+                    input.w3-input(type='date')
+
+                .botao-busca
+
+                    button.w3-button.buscar-btn(type='button')
+
+                        | Buscar viagem

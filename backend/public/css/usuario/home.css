@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.login-btn {
+    background: white;
+    color: #2563eb;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    padding: 20px;
+}
+
+.busca-box {
+    width: 100%;
+    max-width: 1100px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    padding: 40px;
+    backdrop-filter: blur(10px);
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.linha-campos {
+    display: flex;
+    gap: 20px;
+    align-items: end;
+}
+
+.campo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label,
+.campo-data label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.w3-select,
+.w3-input {
+    height: 55px;
+    border: none;
+    border-radius: 18px;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.trocar-btn {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    background: #7c3aed;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.linha-inferior {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 20px;
+}
+
+.campo-data {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.buscar-btn {
+    background: #2563eb !important;
+    height: 55px;
+    border-radius: 18px !important;
+    font-size: 18px !important;
+    padding: 0 40px !important;
+}
