@@ -6,22 +6,50 @@ html(lang='pt-br')
 
         meta(charset='UTF-8')
 
-        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        meta(
+            name='viewport'
+            content='width=device-width, initial-scale=1.0'
+        )
 
         title WebBus
 
-        link(rel='stylesheet', href='https://www.w3schools.com/w3css/4/w3.css')
+        link(
+            rel='stylesheet'
+            href='https://www.w3schools.com/w3css/4/w3.css'
+        )
 
-        link(rel='stylesheet', href='/css/usuario/home.css')
+        link(
+            rel='stylesheet'
+            href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css'
+        )
+
+        link(
+            rel='stylesheet'
+            href='/css/usuario/home.css'
+        )
+
+        link(
+            rel='stylesheet'
+            href='/css/empresa/dashboardEmpresa.css'
+        )
 
     body
 
         header.topo
 
-            .logo WebBus
+            .menu-esquerda
 
-            a.login-btn(href='/usuario/login') Login
+                a.logo(href='/')
+                    WebBus
+
+                a.painel-btn(href='/empresa/dashboard')
+                    Painel da Empresa
+
+            a.usuario-btn(href='/usuario/login')
+                i.fa-solid.fa-user
 
         block content
 
         script(src='/js/usuario/home.js')
+
+        script(src='/js/usuario/cadastroUsuario.js')

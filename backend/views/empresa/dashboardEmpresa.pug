@@ -2,6 +2,40 @@ extends ../layouts/main
 
 block content
 
-    h1 Dashboard Empresa
+    .empresa-header
 
-    p Área da empresa
+        a.logo-empresa(href='/')
+            WebBus
+
+        a.usuario-btn(
+            href='/empresa/ver-funcionarios'
+        )
+            Visualizar Usuários
+
+    .dashboard-container
+
+        .coluna
+
+            h2 Criação
+
+            a.card-btn(href='/empresa/criar-rota')
+                Criar Rota
+
+            a.card-btn(href='/empresa/criar-funcionario')
+                Criar Funcionários
+
+            a.card-btn(href='/empresa/criar-onibus')
+                Criar Ônibus
+
+        .coluna
+
+            h2 Visualização
+
+            a.card-btn(href='/empresa/ver-rotas')
+                Ver Rotas
+
+            a.card-btn(href='/empresa/ver-funcionarios')
+                Ver Funcionários
+
+            a.card-btn(href='/empresa/ver-onibus')
+                Ver Ônibus

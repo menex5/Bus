@@ -1,0 +1,143 @@
+extends ../layouts/main
+
+block content
+
+    .hero
+
+        .cadastro-box.w3-card
+
+            h1.titulo Criar Conta
+
+            form(
+                method='POST'
+                action='/auth/registro'
+            )
+
+                .linha
+
+                    .campo
+                        label Nome Completo
+
+                        input.w3-input(
+                            type='text'
+                            name='nome'
+                            required
+                        )
+
+                    .campo
+                        label CPF
+
+                        input#cpf.w3-input(
+                            type='text'
+                            name='cpf'
+                            maxlength='14'
+                            placeholder='000.000.000-00'
+                            required
+                        )
+
+                .linha
+
+                    .campo
+                        label E-mail
+
+                        input.w3-input(
+                            type='email'
+                            name='email'
+                            required
+                        )
+
+                    .campo
+                        label Telefone
+
+                        input#telefone.w3-input(
+                            type='text'
+                            name='telefone'
+                            placeholder='(00) 00000-0000'
+                            required
+                        )
+
+                .linha
+
+                    .campo
+                        label CEP
+
+                        .cep-container
+
+                            input#cep.w3-input(
+                                type='text'
+                                name='cep'
+                                placeholder='00000-000'
+                                required
+                            )
+
+                            button#buscarCep.w3-button.w3-blue(
+                                type='button'
+                            ) 🔍
+
+                    .campo
+                        label Rua
+
+                        input#rua.w3-input(
+                            type='text'
+                            name='rua'
+                            required
+                        )
+
+                .linha
+
+                    .campo
+                        label Estado
+
+                        select#estado.w3-select(
+                            name='estado'
+                            required
+                        )
+                            option(value='') Selecione
+
+                    .campo
+                        label Cidade
+
+                        select#cidade.w3-select(
+                            name='cidade'
+                            required
+                        )
+                            option(value='') Selecione
+
+                .linha
+
+                    .campo
+                        label Data de Nascimento
+
+                        input.w3-input(
+                            type='date'
+                            name='dataNascimento'
+                        )
+
+                    .campo
+                        label Sexo
+
+                        select.w3-select(
+                            name='sexo'
+                        )
+                            option(value='') Selecione
+                            option(value='Masculino') Masculino
+                            option(value='Feminino') Feminino
+                            option(value='Outro') Outro
+
+                .linha
+
+                    .campo
+                        label Senha
+
+                        input.w3-input(
+                            type='password'
+                            name='senha'
+                            required
+                        )
+
+                br
+
+                button.w3-button.buscar-btn(
+                    type='submit'
+                )
+                    Criar Conta

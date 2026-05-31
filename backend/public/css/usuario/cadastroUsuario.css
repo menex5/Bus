@@ -1,0 +1,78 @@
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.cadastro-box {
+    width: 100%;
+    max-width: 1000px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    padding: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.linha {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.campo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    color: white;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.w3-input,
+.w3-select {
+    height: 55px;
+    border: none;
+    border-radius: 15px;
+}
+
+.buscar-btn {
+    width: 100%;
+    height: 55px;
+    background: #2563eb !important;
+    border-radius: 15px !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+}
+
+@media(max-width:900px) {
+
+    .linha {
+        flex-direction: column;
+    }
+
+}
+
+.cep-container {
+    display: flex;
+    gap: 10px;
+}
+
+.cep-container .w3-input {
+    flex: 1;
+}
+
+.cep-container button {
+    width: 60px;
+    border-radius: 12px;
+}

@@ -1,0 +1,73 @@
+.empresa-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+    background: #111827;
+}
+
+.logo-empresa {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.usuario-btn {
+    background: #2563eb;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dashboard-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 20px;
+}
+
+.coluna {
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.coluna h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.card-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 18px;
+    margin-bottom: 15px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.card-btn:hover {
+    background: #1e40af;
+    transform: translateY(-3px);
+}
+
+@media(max-width:800px) {
+
+    .dashboard-container {
+        grid-template-columns: 1fr;
+    }
+
+}

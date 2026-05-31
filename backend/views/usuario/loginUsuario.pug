@@ -6,12 +6,33 @@ block content
 
         h1 Login
 
-        input.w3-input(type='email' placeholder='Digite seu email')
+        form(
+            method='POST'
+            action='/auth/login'
+        )
+
+            input.w3-input(
+                type='email'
+                name='email'
+                placeholder='Digite seu email'
+            )
+
+            br
+
+            input.w3-input(
+                type='password'
+                name='senha'
+                placeholder='Digite sua senha'
+            )
+
+            br
+
+            button.w3-button.w3-blue(
+                type='submit'
+            ) Entrar
 
         br
 
-        input.w3-input(type='password' placeholder='Digite sua senha')
-
-        br
-
-        button.w3-button.w3-blue Entrar
+        a.w3-button.w3-green(
+            href='/auth/registro'
+        ) Criar Conta
